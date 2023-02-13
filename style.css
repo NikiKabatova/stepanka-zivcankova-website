@@ -1,129 +1,21 @@
-*,
-body,
-::before,
-::after {
+/* responsive-navbar */
+* {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Nunito Sans', sans-serif; */
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  font-family: 'Roboto', sans-serif;
+  /* box-sizing: border-box; */
 }
 
 h1,
 h2 {
-  /* font-family: 'Noto Serif Display', serif; */
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-strong {
-  font-weight: 600;
-}
-
-.nav {
-  /* display: flex;
-  align-items: center;
-  gap: 20px; */
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /*Set the navbar to fixed position */
-  top: 0; /*Position the navbar at the top of the page */
-  left: 0;
-  width: 100%; /*Full width*/
-}
-
-.nav-link {
-  text-decoration: none;
-  margin-right: 0.5rem;
-  color: black;
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.nav-link:hover {
-  background: #ddd;
-  color: black;
-}
-
-.nav-link.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.nav .icon {
-  display: none;
-}
-
-
-@media screen and (max-width: 600px) {
-  .nav-link:not(:first-child) {display: none;}
-  .nav-link.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.page-header {
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/* logo */
-.logo {
-  position: fixed;
-  padding-top: 8px;
-  background: transparent;
-  overflow: hidden;
-  z-index: 1;
-  width: 40px;
-}
-
-
-
-.intro-image {
-  background-image: url('/images/intro-image.jpg');
-  height: 100vh; /*70% výšky displaye*/
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.about-content {
-  padding: 30px 50px;
-  padding-top: 0;
-  text-align: left;
 }
 
 h1 {
@@ -131,113 +23,225 @@ h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
-.besedy-hero {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
+nav {
+  background: #333;
+  height: 80px;
+  width: 100%;
+  position: fixed;
 }
 
-.besedy-image {
-  background-image: url('/images/besedy-image_blk.jpg');
-  height: 70vh; % výšky displaye
-  width: 90vw;
+/* label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+} */
+
+.logo {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  overflow: hidden;
+  z-index: 1;
+  width: 48px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.active,
+a:hover {
+  background: #a49594;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #a49594;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #333;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.bg-image {
+  background: url(images/intro-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+}
+/* section {
+  background: url(images/intro-image.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+} */
+
+/* end responsive-navbar */
+
+/* SECTION - about */
+.about-content {
+  padding: 30px 50px;
+  padding-top: 0;
+  text-align: left;
+}
+
+/* SECTION - besedy */
+.besedy__image {
+  background-image: url(images/besedy-greycolor.jpg);
+  height: 70vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .besedy-content {
-  padding: 2.5rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.offer__content {
-  align-items: center;
-  justify-content: center;
-}
-
-.offer__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.offer__detail {
-  font-size: 1.2rem;
-}
-
-.besedy__subtitle {
-  padding-bottom: 30px;
+  padding: 30px 50px;
+  padding-top: 0;
   text-align: left;
+  margin-top: 30px;
 }
 
-.review {
-  padding: 3.5rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h2 {
+  font-size: 21px;
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
 }
 
-.review__title {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
+/* CARD - invite */
+.invite-container {
+  margin-top: 30px;
 }
 
-.review__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 90px;
-}
-
-.review__text {
-  color: white;
-  font-size: 1.3rem;
-  width: 300px;
-  height: 415px;
-  padding: 1.4rem;
-  background-color: #a49594;
-  left: 60px;
-}
-
-.review__author {
-  text-align: end;
-  font-style: normal;
-}
-
-.review__photo {
-  background-image: url('/images/beseda__poster.jpeg');
-  width: 300px;
-  height: 415px;
+.besedy__image-invite {
+  background-image: url(images/invite.jpeg);
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* FOOTER */
+.button {
+  border-radius: 3px;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 6px 8px;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  width: 30%;
+}
+
+@media (min-width: 952px) {
+  .invite__card {
+    display: flex;
+  }
+
+  .besedy__image-invite {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .invite__card-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+  }
+}
+
+/* FOOTER - contact */
+
 .footer {
-  padding: 5.5rem 2.5rem;
+  padding: 2.5rem 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   gap: 2rem;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #a49594;
+  background-color: #333;
   color: white;
 }
 
 .footer__logo {
   background: transparent;
   overflow: hidden;
-  z-index: 1;
+  /* z-index: 1; */
   width: 47px;
 }
 
@@ -260,86 +264,13 @@ h1 {
   margin-right: 0.5rem;
 }
 
-a {
+.contact__detail a,
+.social-media__row a {
   text-decoration: none;
   color: white;
 }
 
-/* CARD styles */
-
-.section-cards {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 64px;
-}
-
-.cards-container {
-  width: 80%;
-  max-width: 1920px;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  margin-bottom: 64px;
-}
-
-.card-right {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-
-.card-image {
-  width: 50%;
-  object-fit: cover;
-}
-
-.card-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: left;
-}
-
-.card-text {
-  display: flex;
-  width: 50%;
-  margin-top: 50px;
-  margin-bottom: auto;
-  padding-right: 40px;
-  padding-left: 40px;
-  flex-direction: column;
-  grid-row-gap: 12px;
-}
-
-.button {
-  /* display: inline-block; */
-  padding: 6px 8px;
-  /* float: left; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  text-align: center;
-  width: 30%;
-}
-
-.about-content p {
-  margin-bottom: 0.8rem;
-}
-
-/* besedy */
-
-.besedy-content {
-  padding: 30px 50px;
-  padding-top: 0;
-  text-align: left;
-}
-
-.besedy-content p {
-  text-align: left;
+.contact__label,
+.icon {
+  margin-right: 15px;
 }

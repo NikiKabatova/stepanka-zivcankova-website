@@ -12,36 +12,36 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="page-header">
-      <div class="logo-container">
-        <img
-          class="logo"
-          src="images/SZ_logo_wht.png"
-          alt="logo Štěpánka Živčáková"
-        />
-      </div>
-      <nav class="nav" id="myNav">
-        <a class="nav-link" href="#about">O mně</a>
-        <a class="nav-link" href="#besedy">Besedy</a>
-        <a class="nav-link" href="#book">Kniha</a>
-        <a class="nav-link" href="#contact">Kontakt</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
           <i class="fa fa-bars"></i>
-        </a>
-        <!-- <div class="icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div> -->
+        </label>
+        <!-- <label class="logo">Logo</label> -->
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="images/SZ_logo_wht.png"
+            alt="logo Štěpánka Živčáková"
+          />
+        </div>
+        <ul>
+          <li class="nav-link"><a class="active" href="#">Úvod</a></li>
+          <li class="nav-link"><a href="#">O mně</a></li>
+          <li class="nav-link"><a href="#">Kniha</a></li>
+          <li class="nav-link"><a href="#">Besedy</a></li>
+          <li class="nav-link"><a href="#">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
-    <section class="intro">
-      <div>
-        <img class="intro-image" alt="" />
-      </div>
-    </section>
+    <section class="bg-image"></section>
     <section class="about" id="about">
       <h1 class="about__title">O mně</h1>
       <div class="about-content">
@@ -77,15 +77,11 @@
         </p>
       </div>
     </section>
-    <div class="besedy">
-      <h1>Besedy</h1>
-      <div class="besedy-hero">
-        <img class="besedy-image" src="images/besedy-image_blk.jpg" />
-      </div>
+    <section class="besedy" id="besedy">
+      <h1 class="besedy__title">Besedy</h1>
+      <div class="besedy__image"></div>
       <div class="besedy-content">
         <h2>Povídání o depresi</h2>
-        <!-- <div class="besedy-content-intro"> -->
-
         <p>
           Vnímáte, že prevence v oblasti duševního zdraví je důležitá činnost a
           šance, aby se žáci měli lépe?
@@ -102,8 +98,7 @@
           Chcete, aby byli žáci schopni rozpoznat, že se s nimi něco děje a
           nebáli se vyhledat odbornou pomoc než bude pozdě?
         </p>
-        <!-- </div> -->
-        <h3>Deprese</h3>
+        <h2>Deprese</h2>
         <p>
           Tu zná přece každý. Málokdo o ní ale chce (nebo zvládne) mluvit. Natož
           veřejně. Většina lidí ví, co si pod slovem DEPRESE má představit.
@@ -116,29 +111,27 @@
           Přestože bych se mohla nazvat kovářovic kobylou - moje mamka pracovala
           v pedagogicko-psychologické poradně.
         </p>
-        <h3>Recenze</h3>
-        <p>připravuje se</p>
+        <h2>Recenze</h2>
+        <p><strong>Připravuje se!</strong></p>
         <br /><br />
-
         <p>
           Pro kolik žáků je beseda určena: jeden třídní kolektiv - abychom
           vytvořili bezpečné místo pro případné sdílení (či dle dohody)
         </p>
-
-        <p>V jakém časovém rozsahu: 2 vyučovací hodiny</p>
-      </div>
-    </div>
-    <section class="section-cards">
-      <div class="cards-container">
-        <div class="card-right card">
-          <img class="card-image" src="images/invite.jpeg" />
-          <div class="card-text">
-            <h2 class="card-title">Kde se můžeme vidět?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              consectetur.
-            </p>
-            <button class="button">Přihlásit se</button>
+        <p>V jakém časovém rozsahu: <strong>2 vyučovací hodiny</strong></p>
+        <div class="invite-container">
+          <div class="invite__card">
+            <div class="besedy__image-invite"></div>
+            <div class="invite__card-text">
+              <h2>Kde se můžeme potkat?</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium ex enim repellendus magni atque, officia quidem
+                explicabo et fuga! Voluptates, beatae autem. Fugiat est nulla
+                reprehenderit autem praesentium, cupiditate sed!
+              </p>
+              <button class="button">Přihlásit se</button>
+            </div>
           </div>
         </div>
       </div>
@@ -151,7 +144,7 @@
       />
       <section class="contact" id="contact">
         <div class="contact__row">
-          <span class="contact__label">E-mail: </span
+          <span class="contact__label">E-mail:</span
           ><span class="contact__detail"
             ><a href="mailto:stepanka.zivcakova@gmail.com"
               >stepanka.zivcakova@gmail.com</a
@@ -159,7 +152,7 @@
           >
         </div>
         <div class="contact__row">
-          <span class="contact__label">Telefon: </span
+          <span class="contact__label">Telefon:</span
           ><span class="contact__detail">+420 604 715 160</span>
         </div>
       </section>
@@ -192,15 +185,5 @@
         </div>
       </section>
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById('myNav');
-        if (x.className === 'nav') {
-          x.className += ' responsive';
-        } else {
-          x.className = 'nav';
-        }
-      }
-    </script>
   </body>
 </html>
