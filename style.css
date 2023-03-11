@@ -50,7 +50,7 @@ nav {
   width: 48px;
 }
 
-nav ul {
+/* nav ul {
   float: right;
   margin-right: 20px;
 }
@@ -135,21 +135,17 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
+} */
 
+/* .nav-link {
+  color: #fff !important;
+} */
 .bg-image {
   background: url(images/intro-image.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: calc(100vh - 80px);
 }
-/* section {
-  background: url(images/intro-image.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-} */
-
-/* end responsive-navbar */
 
 /* SECTION - about */
 .about-content {
@@ -200,7 +196,6 @@ h2 {
   display: inline-block;
   padding: 6px 8px;
   justify-content: center;
-  /* align-items: center; */
   background-color: #000000;
   color: #fff;
   text-align: center;
