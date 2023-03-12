@@ -8,19 +8,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Domine', serif;
   /* box-sizing: border-box; */
 }
 
 h1,
 h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
   padding-top: 20px;
@@ -125,6 +125,12 @@ nav {
   padding: 10px;
 }
 
+.navbar-dark .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* HERO IMAGE */
 
 .bg-image {
@@ -158,8 +164,12 @@ nav {
   margin-top: 30px;
 }
 
+.besedy-content a {
+  text-decoration: none;
+}
+
 h2 {
-  font-size: 21px;
+  font-size: 2rem;
   margin-bottom: 0.6rem;
   margin-top: 0.6rem;
 }
@@ -170,14 +180,15 @@ h2 {
 }
 
 .besedy__image-invite {
-  background-image: url(images/invite.jpeg);
+  background-image: url(images/invite_blk.jpeg);
   height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.button {
+.card-btn {
+  text-decoration: none;
   border-radius: 3px;
   margin-top: 15px;
   display: inline-block;
@@ -187,6 +198,12 @@ h2 {
   color: #fff;
   text-align: center;
   width: 30%;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 @media (min-width: 952px) {
