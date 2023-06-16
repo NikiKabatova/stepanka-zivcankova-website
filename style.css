@@ -49,6 +49,46 @@ nav {
   z-index: 1;
   width: 48px;
 }
+
+.header {
+  margin-bottom: 150px;
+}
+
+.book {
+  margin-top: 9rem;
+}
+
+.book__title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 5rem;
+}
+
+.book-img {
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 400px);
+}
+
+.book-content-info {
+  display: flex;
+  align-items: center;
+}
+/* .heading {
+  width: 600px;
+  margin-left: -80px;
+  margin-top: 170px;
+}
+
+.title {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+#book {
+  margin-top: 450px;
+} */
+
 /* NAVBAR - HAMBURGER */
 /* 
 .navbar-toggler {
@@ -141,7 +181,8 @@ nav {
 }
 
 /* SECTION - about */
-.about-content {
+.about-content,
+.book-content {
   padding: 30px 50px;
   padding-top: 0;
   text-align: left;
