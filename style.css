@@ -13,7 +13,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
 }
@@ -60,8 +61,13 @@ nav {
 
 .book__title {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   font-size: 5rem;
+}
+
+.book__subtitle {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .book-img {
@@ -183,9 +189,12 @@ nav {
 /* SECTION - about */
 .about-content,
 .book-content {
-  padding: 30px 50px;
   padding-top: 0;
   text-align: left;
+}
+
+.content {
+  padding: 30px 90px;
 }
 
 /* SECTION - besedy */
@@ -199,7 +208,6 @@ nav {
 }
 
 .besedy-content {
-  padding: 30px 50px;
   padding-top: 0;
   text-align: left;
   margin-top: 30px;
@@ -267,12 +275,13 @@ h2 {
 /* FOOTER - contact */
 
 .footer {
-  padding: 2.5rem 1.5rem;
-  font-size: 1rem;
+  padding: 5rem 5rem;
+  padding-bottom: 0;
+  font-size: 16px;
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   background-color: #333;
   color: white;
@@ -282,7 +291,7 @@ h2 {
   background: transparent;
   overflow: hidden;
   /* z-index: 1; */
-  width: 47px;
+  width: 12%;
 }
 
 .contact__row span {
@@ -315,8 +324,169 @@ h2 {
   margin-right: 15px;
 }
 
-@media (min-width: 450px) {
-  .footer {
-    font-size: 1.2rem;
+/* KARTICKY - OFFERS */
+.align-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-container {
+  background-color: #a49594;
+  color: white;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  gap: 2rem;
+}
+
+.offer-text {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 60px;
+  padding-bottom: 80px;
+}
+
+.offer-photos {
+  flex: 0 0 50%;
+  display: flex;
+  width: 95%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  gap: 25px;
+}
+
+.offer-image {
+  width: 33%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-out;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.offer-image-1 {
+  background-image: url(./images-offers/besedy.jpg);
+}
+
+.offer-image-2 {
+  background-image: url(./images-offers/book.jpg);
+}
+
+.offer-image-3 {
+  background-image: url(./images-offers/blog.jpg);
+}
+
+.offer-image a {
+  width: 16%;
+  height: 10%;
+}
+
+.offer-image:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  padding-bottom: 33%;
+}
+
+.offer-image:hover {
+  filter: grayscale(0%);
+}
+
+.offer-image h3 {
+  display: none;
+  top: 50%;
+  left: 50%;
+  color: aliceblue;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 2px #555;
+  font-size: 50px;
+}
+
+.offer-image:hover h3 {
+  display: block;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/* Karticky - responsive  */
+
+@media (max-width: 470px) {
+  .offer-photos {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .offer-image {
+    width: 100%;
+  }
+}
+
+/* FOOTER STYLES */
+
+.footer-copyright {
+  border-top: #a49594 1px solid;
+  padding-top: 20px;
+  margin-bottom: 1rem;
+  color: #8a8a8a;
+  font-size: 12px;
+}
+
+.footer-copyright a {
+  /* text-decoration: none; */
+  color: #8a8a8a;
+}
+
+.wrapper-test {
+  /* display: flex; */
+  margin-bottom: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.social-media {
+  display: flex;
+}
+
+.partners {
+  width: 150px;
+}
+
+.partners-container {
+  margin-left: 5rem;
+}
+
+.partners-media {
+  display: flex;
+  gap: 2rem;
+}
+
+/* .partners-media-2columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+.partners-zeme {
+  width: 70px;
+}
+
+.icon:hover {
+  filter: invert(48%) sepia(99%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
 }
