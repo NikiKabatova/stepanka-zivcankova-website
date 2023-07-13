@@ -16,101 +16,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&family=Anton&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand mb-0" href="#">
-            <img
-              class="d-inline-block align-top"
-              src="images/sz_logo_wht.png"
-              alt="logo Štěpánka Živčáková"
-              height="40px"
-              width="40px"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-    <!-- <span class="toggler-icon toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span> -->
 
-    <!--           
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Úvod</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">O mně</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#besedy">Besedy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#book">Kniha</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Kontakt</a>
-              </li>
-            </ul>
-          
-    </header> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand mb-0" href="#">
-        <img
-          class="d-inline-block align-top"
-          src="images/sz_logo_wht.png"
-          alt="logo Štěpánka Živčáková"
-          height="40px"
-          width="40px"
-        />
-        Štěpánka Živčáková
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Úvod</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">O mně</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Besedy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kniha</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontakt</a>
-          </li>
-        </ul>
+    <nav>
+      <div class="top-nav">
+        <div class="logo-container"><a href="#">
+          <img
+            class=""
+            src="images/sz_logo_wht.png"
+            alt="logo Štěpánka Živčáková"
+            height="30px"
+            width="30px"
+          />
+        </a>Štěpánka Živčáková</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <div class="menu">
+          <a href="#">Úvod</a>
+          <a href="#">O mně</a>
+          <a href="#">Kniha</a>
+          <a href="#">Besedy</a>
+          <a href="#">Blog</a>
+          <a href="#">Kontakt</a>
+        </div>
       </div>
     </nav>
+
     <section class="bg-image"></section>
     <section class="about" id="about">
       <h1 class="about__title">Ke komu tě vítr zavál ?</h1>
@@ -147,75 +84,6 @@
         </p>
       </div>
     </section>
-    <!-- <section class="besedy" id="besedy">
-      <h1 class="besedy__title">Besedy</h1>
-      <div class="besedy__image"></div>
-      <div class="besedy-content content">
-        <h2>Povídání o depresi</h2>
-        <p>
-          Abych otevřela téma deprese, rozhodla jsem se v rámci své práce
-          pořádat besedy s názvem Vezmi depresi na kafe na nejrůznějších
-          místech. Ptáte se proč? Protože každému je příjemně někde jinde. Mé
-          besedy jsou vedeny v přátelském duchu a z pohledu člověka, který si
-          depresí prošel. Vyprávím svůj příběh a přeji si, aby v něm ostatní
-          našli to, co hledají.
-        </p>
-        <h2>Pro koho jsou besedy určeny?</h2>
-        <p>
-          Pro všechny – lze je pořádat ve školách základních, středních,
-          vysokých, v rámci zájmových kroužků, v kavárnách, lázních, kinech…
-          Prostě všude, kde si toto téma najde své posluchače.
-        </p>
-        <h2>Jak je beseda koncipována?</h2>
-        <p>
-          Seznámení se s tím, kdo jsem já a proč besedy dělám. Rozdíly mezi
-          depresí a depkou. Sdílení mého vlastního příběhu po boku deprese.
-          Tipy, jak reagovat, když v okolí někdo depresi má a co pro něj můžu
-          udělat.
-        </p>
-        <h2>Jak dlouho beseda trvá?</h2>
-        <p>
-          cca 2 hodiny (odvíjí se i od dané skupiny posluchačů, počtu dotazů
-          atd.) Lze přizpůsobit.
-        </p>
-        <h2>Cena?</h2>
-        <p>
-          Cena na základě osobní konzultace. Dokážu se přizpůsobit vašim
-          podmínkám a jsem otevřená hledání možností pro oboustrannou
-          spokojenost.
-        </p>
-
-        <p>
-          <strong
-            >Chtěli byste besedu i ve Vašem městě? Stačí napsat na
-            <span
-              ><a href="mailto:stepankazivcakova@gmail.com"
-                >stepankazivcakova@gmail.com</a
-              ></span
-            >
-          </strong>
-        </p>
-
-        <div class="invite-container">
-          <div class="invite__card">
-            <div class="besedy__image-invite"></div>
-            <div class="invite__card-text">
-              <h2>Kde se můžeme potkat?</h2>
-              <p>
-                Momentalně se další akce připravují, pokud chcete byt jejich
-                součástí, klikněte na tlačítko, který vás odkaže na aktualní
-                nabídku.
-              </p>
-              <a
-                class="card-btn"
-                href="https://www.facebook.com/profile.php?id=100086792183174"
-                >Události</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section>
       <div class="offer-container align-center-content">
@@ -229,17 +97,22 @@
           </p>
         </div>
         <ul class="offer-photos">
+
+          <h2>Besedy</h2>
           <li class="offer-image offer-image-1">
             <a href="pages/talk.html">
               <h3>Besedy</h3>
             </a>
           </li>
 
+          <h2>Kniha</h2>
           <li class="offer-image offer-image-2">
             <a href="pages/book.html">
               <h3>Kniha</h3>
             </a>
           </li>
+
+          <h2>Blog</h2>
           <li class="offer-image offer-image-3">
             <a href="pages/blog.html">
               <h3>Blog</h3>
@@ -248,30 +121,97 @@
         </ul>
       </div>
     </section>
+<!-- SLIDER TESTING -->
+    <section class="review">
+      <div class="review-container">
+        <input type="radio" name="position" checked />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
 
-    <!-- <div class="footer-container-new">
-      <div class="footer-logo">
-        <img
-          class="footer__logo"
-          src="images/sz_logo_wht.png"
-          alt="logo Štěpánka Živčáková"
-        /><a href="index.html"></a>
+        <main id="carousel">
+          <div class="item item-1">
+            <img class="review-image" src="illustrations/38_ilustrace.jpg"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam!</p>
+          </div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        <main>
       </div>
-      <div class="contact" id="contact">
-        <div class="contact__row">
-          <span class="contact__label">E-mail:</span
-          ><span class="contact__detail"
-            ><a href="mailto:stepanka.zivcakova@gmail.com"
-              >stepankazivcakova@gmail.com</a
-            ></span
-          >
-        </div>
-        <div class="contact__row">
-          <span class="contact__label">Telefon:</span
-          ><span class="contact__detail">+420 604 715 160</span>
-        </div>
+    </section>
+
+
+
+<h1>Recenze</h1>
+
+<p>This carousel is created with HTML and CSS only.</p>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
       </div>
-    </div> -->
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+<!-- SLIDER TESTING END -->
 
     <footer class="footer">
       <div class="footer-container">
@@ -302,13 +242,13 @@
             <div class="social-media">
               <div class="social-media__row">
                 <span
-                  ><a
+                  ><a class="icon"
                     href="https://www.facebook.com/profile.php?id=100086792183174"
                     ><img
                       class="icon"
                       src="icons/facebook.svg"
                       alt="facebook logo"
-                      width="30"
+                      width="40"
                     /> </a
                 ></span>
               </div>
@@ -319,7 +259,7 @@
                       class="icon"
                       src="icons/instagram.svg"
                       alt="instagram logo"
-                      width="30"
+                      width="40"
                     /> </a
                 ></span>
               </div>
@@ -365,21 +305,7 @@
       </div>
     </footer>
 
-    <!-- FUNKCNOST HAMBURBER MENU -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+
+  
   </body>
 </html>
