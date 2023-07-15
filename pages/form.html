@@ -45,121 +45,41 @@
         </div>
       </div>
     </nav>
+    <section class="form-container">
+      <div class="form-card">
+        <h1>Objednávkový formulář</h1>
+        <div class="form-content content">
+          <p>
+            Objednávkový je právě v rukou vývojářky a bude hotový koncem měsíce.
+          </p>
+          <p>
+            Knižku můžete aktuálně objednat tak, že mi pošlete
+            <strong
+              ><span class="contact__detail"
+                ><a href="mailto:stepankazivcakova@gmail.com">email</a></span
+              ></strong
+            >.
+          </p>
 
-    <h1>Objednávkový formulář</h1>
-    <div class="form-content content">
-      <p>
-        Objednávkový formulář je právě ve výstavbě a měl by byt brzo hotový.
-      </p>
-      <p>
-        Pokud máte tedy zájem knížku napište mi prosím email a já se s Vámi
-        obratem spojim.
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="title">
-        <h2>Objednávkový formulář</h2>
-      </div>
-      <div class="d-flex">
-        <form
-          action="https://formsubmit.co/nikola.kabatova@gmail.com"
-          method="POST"
-        >
-          <label>
-            <span>Počet kusů <span class="required">*</span></span>
-            <select name="selection">
-              <option value="select">Vyberte počet kusů..</option>
-
-              <option value="1">1 ks</option>
-              <option value="2">2 ks</option>
-              <option value="3">3 ks</option>
-              <option value="4">4 ks</option>
-              <option value="5">5 ks</option>
-            </select>
-          </label>
-          <label>
-            <span class="fname">Jméno <span class="required">*</span></span>
-            <input type="text" name="fname" />
-          </label>
-          <label>
-            <span class="lname">Příjmení <span class="required">*</span></span>
-            <input type="text" name="lname" />
-          </label>
-          <!-- <label>
-            <span>Název firmy (Optional)</span>
-            <input type="text" name="cn" />
-          </label> -->
-          <label>
-            <span>Stát <span class="required">*</span></span>
-            <select name="selection">
-              <option value="select">Vyberte stát..</option>
-
-              <option value="CZE">Česká Republika</option>
-              <option value="SVK">Slovakia</option>
-            </select>
-          </label>
-          <label>
-            <span>Ulice <span class="required">*</span></span>
-            <input
-              type="text"
-              name="houseadd"
-              placeholder="Název ulice a číslo domu"
-              required
-            />
-          </label>
-          <label> </label>
-          <label>
-            <span>Město<span class="required">*</span></span>
-            <input type="text" name="city" />
-          </label>
-
-          <label>
-            <span>PSČ <span class="required">*</span></span>
-            <input type="text" name="city" />
-          </label>
-          <label>
-            <span>Telefon<span class="required">*</span></span>
-            <input type="tel" name="city" />
-          </label>
-          <label>
-            <span>Email <span class="required">*</span></span>
-            <input type="email" name="city" />
-          </label>
-        </form>
-
-        <div class="Yorder">
-          <table>
-            <tr>
-              <th colspan="2">Vaše objednávka</th>
-            </tr>
-          </table>
-          <br />
-          <tr>
-            <th colspan="2">
-              <strong>Doprava</strong>
-            </th>
-          </tr>
-          <div>
-            <input type="radio" name="dbt" value="dbt" checked /> Zásilkovna (79
-            Kč)
+          <div class="email-instruction">
+            <h3>Do emailu mi prosím napište tyto údaje:</h3>
+            <ul>
+              <li>Jméno a příjmení</li>
+              <li>Email</li>
+              <li>Telefonní číslo</li>
+              <li>Adresu</li>
+              <li>Typ dopravy:<br />Zásilkovna(79 Kč) / Česká pošta(72 Kč)</li>
+              <li>Počet kůsů</li>
+            </ul>
           </div>
-
-          <div>
-            <input type="radio" name="dbt" value="cd" /> Česká poška (72 Kč)
-          </div>
-
-          <button type="submit">Place Order</button>
           <a
-            href="https://formsubmit.co/el/{https://formsubmit.co/el/yaziro}"
-            target="_blank"
-            >Email us</a
+            class="form-btn btn-center"
+            href="mailto:stepankazivcakova@gmail.com"
+            >Napsat email</a
           >
         </div>
-        <!-- Yorder -->
       </div>
-    </div>
-
+    </section>
     <footer class="footer">
       <div class="footer-container">
         <div class="wrapper-social">
@@ -173,7 +93,7 @@
               <div class="contact__row">
                 <span class="contact__label">E-mail:</span
                 ><span class="contact__detail"
-                  ><a href="mailto:stepanka.zivcakova@gmail.com"
+                  ><a href="mailto:stepankazivcakova@gmail.com"
                     >stepankazivcakova@gmail.com</a
                   ></span
                 >
@@ -236,7 +156,7 @@
 
             <div class="partners-media__row">
               <img
-                class="partners partners-zeme"
+                class="partners-zeme"
                 src="../images-partners/zms.png"
                 alt="partners"
               />

@@ -84,6 +84,11 @@ h1 {
   padding-bottom: 1rem;
 }
 
+.about__title {
+  padding: 80px 60px;
+  padding-bottom: 20px;
+}
+
 .bigger-text {
   text-align: center;
   font-size: 28px;
@@ -262,6 +267,16 @@ h2 {
   justify-content: center;
 }
 
+.offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-image {
+  width: 100%;
+}
+
 .offer-container {
   background-color: #a49594;
   color: white;
@@ -275,8 +290,8 @@ h2 {
 .offer-text {
   display: flex;
   flex-direction: column;
-  padding: 120px 60px;
-  padding-bottom: 80px;
+  padding: 80px 60px;
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
@@ -626,6 +641,16 @@ body {
   .footer__logo {
     width: 14%;
   }
+
+  .offer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer-image {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -684,5 +709,68 @@ body {
 
   footer h3 {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bg-image {
+    height: 80vh;
+  }
+}
+
+/* BOOK MEDIA - MOBILE */
+
+@media only screen and (max-width: 526px) {
+  .book__title {
+    font-size: 3rem;
+  }
+
+  .content {
+    padding: 0 40px 70px 40px;
+  }
+
+  .book-content-info {
+    flex-direction: column;
+  }
+
+  .book-img {
+    width: 100%;
+  }
+
+  .illustrations-image {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contact__row {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  .social-media-container {
+    margin-bottom: 2rem;
+  }
+
+  footer h3 {
+    margin-bottom: 1rem;
+  }
+
+  .partners {
+    width: 130px;
+  }
+
+  .partners-zeme {
+    width: 70px;
+  }
+  .partners-media {
+    gap: 1rem;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
   }
 }

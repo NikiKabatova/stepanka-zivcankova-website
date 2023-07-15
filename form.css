@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 
-body {
+/* body {
   background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
   font-family: 'Roboto Condensed', sans-serif;
   color: #262626;
-  margin: 5% 0;
-}
+} */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -111,7 +110,7 @@ td {
 
 p {
   display: block;
-  color: #888;
+  /* color: #888; */
   margin: 0;
   padding-left: 25px;
 }
@@ -136,7 +135,85 @@ button:hover {
 }
 
 /* Náhradní formulář */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .form-content {
+  text-align: center;
+  padding: 30px 30px 40px 30px;
+}
+
+.form-content p {
+  padding-left: 0;
+  padding-bottom: 1rem;
   text-align: left;
+}
+
+.form-card {
+  background-color: #a49594;
+  color: white;
+  width: 320px;
+  margin: 80px 0 380px 0;
+  border-radius: 20px;
+  filter: drop-shadow(2px 4px 6px grey);
+  z-index: -1;
+}
+
+.email-instruction h3 {
+  margin: 1rem;
+}
+
+.email-instruction li {
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.form-btn {
+  background-color: #333;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: white;
+  color: #a49594;
+}
+
+.email-instruction {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .form-card {
+    margin: 80px 30px 380px 30px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .form-card {
+    width: 620px;
+    font-size: 2rem;
+  }
+
+  .form-card h1 {
+    margin-top: 1rem;
+  }
+
+  .form-content {
+    padding-bottom: 60px;
+  }
+
+  .email-instruction h3 {
+    margin: 3rem;
+  }
+
+  .email-instruction {
+    margin-bottom: 5rem;
+  }
 }
