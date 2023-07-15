@@ -6,80 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Štěpánka Živčáková</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&family=Anton&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand mb-0" href="#">
-        <img
-          class="d-inline-block align-top"
-          src="../images/sz_logo_wht.png"
-          alt="logo Štěpánka Živčáková"
-          height="40px"
-          width="40px"
-        />
-        Štěpánka Živčáková
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html"
-              >Úvod</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/about.html">O mně</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/talk.html">Besedy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="">Kniha</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/contact.html">Kontakt</a>
-          </li>
-        </ul>
+    <nav>
+      <div class="top-nav">
+        <div class="logo-container">
+          <a href="#">
+            <img
+              class=""
+              src="../images/sz_logo_wht.png"
+              alt="logo Štěpánka Živčáková"
+              height="30px"
+              width="30px"
+            /> </a
+          >Štěpánka Živčáková
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <div class="menu">
+          <a href="../index.html">Úvod</a>
+          <a href="#">O mně</a>
+          <a href="../pages/book.html">Kniha</a>
+          <a href="#">Besedy</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Kontakt</a>
+        </div>
       </div>
     </nav>
+
     <section class="book" id="book">
       <h1 class="book__title">DRÁTEM DO OKA</h1>
-      <h2 class="book__subtitle">Příběh, který napsal život sám</h2>
       <div class="book-content content">
-        <p>
-          Skutečný příběh ženy, která se pokusila o sebevraždu, jeji myšlenky a
-          pocity, jež ji k takovému rozhodnutí vedly.
-        </p>
-        <p>
-          Autorka se formou deníku otevřeně zpovídá ze svých zkušeností s
-          depresí. Kniha přináší otevřený pohled do nitra člověka, který se
-          rozhodl říci životu: Už dost!
-        </p>
-
         <div class="book-content-info">
           <img
             class="book-img"
@@ -88,24 +54,97 @@
           />
 
           <div class="book-copy">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              ullam dicta molestiae, ipsam magni similique velit quas possimus.
-              Quas maiores nobis rerum ipsam facere. Neque ducimus, ex sequi
-              quae quibusdam eveniet quam ut cupiditate ratione tempore? Ipsum
-              suscipit sed nemo, ipsam, porro, amet dolores itaque ex expedita
-              libero laudantium accusantium?
-            </p>
-            <p class="book-copy">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              ullam dicta molestiae, ipsam magni similique velit quas possimus.
-              Quas maiores nobis rerum ipsam facere. Neque ducimus, ex sequi
-              quae quibusdam eveniet quam ut cupiditate ratione tempore? Ipsum
-              suscipit sed nemo, ipsam, porro, amet dolores itaque ex expedita
-              libero laudantium accusantium?
-            </p>
+            <div class="book-copy-container">
+              <p>Baví Tě otevírat témata, o kterých se běžně nemluví?</p>
+              <p>
+                A to ještě s někým, kdo své téma vypráví z vlastní zkušenosti?
+                Bez obalu a s humorem?
+              </p>
+              <p>
+                Zajímá Tě, co se asi honí v hlavě člověku, který to tady chtěl
+                zabalit?
+              </p>
+              <p>
+                Jsou věci, které nám hlava nebere. Deprese mezi ně jednoznačně
+                patří. A právě proto vznikla kniha Drátem do oka.
+              </p>
+            </div>
+            <a class="book-btn" href="../pages/form.html">Koupit knížku</a>
           </div>
         </div>
+
+        <h2 class="book__subtitle">Proč kniha vznikla?</h2>
+        <div class="copy-container">
+          <p>
+            Když jsem opustila zdi psychiatrické kliniky po té, co jsem se v
+            lednu 2013 pokusila zabít, přišla na řadu důležitá otázka.
+            <strong>Jak sdělit lidem v okolí, co se se mnou děje?</strong>
+            Deprese byla stále se mnou, i když jsem se díky léčbě cítila trochu
+            lépe. Ale nebyla jsem na tom tak, abych mohla fungovat v běžném
+            životě jako předtím.
+          </p>
+          <p>
+            O svých stavech jsem se skoro s nikým nechtěla bavit, protože jsem
+            jim sama málokdy rozuměla. Často jsem neuměla popsat, co se uvnitř
+            mě děje a většinu času jsem zkrátka mlčela. Pokud jsem zrovna neměla
+            horší den.To jsem jen brečela. Styděla jsem se za všechno, co jsem
+            udělala a za to, jaká jsem - v mých očích k ničemu.
+          </p>
+          <p>
+            Díky tomu, že jsme si na psychiatrii museli vést deník a já si
+            vyzkoušela, jak hodně mi psaní pomáhá, vznikl nápad -
+            <strong>čít psát blog</strong>. A tak lidem v okolí vysvětlit, proč
+            jsem v poslední době divná, jiná. A to se stalo.
+          </p>
+          <p>
+            Články na blogu měly větší úspěch, než jsem čekala. Nejen, že moji
+            blízcí od té doby věděli, jak mi mohou či nemohou pomoci, ale bavilo
+            je to. Přidávala jsem i nepřeberné historky, které jsem zažila na
+            uzavřeném oddělení nebo jsem tam přepisovala svoje zápisky z deníku.
+            Během psaní blogu jsem si uvědomila, že se za svou nemoc nemusím
+            tolik stydět a že ji začínám více přijímat. A díky některým reakcím
+            jsem si uvědomila, že tohle moje pisálkování by mohlo pomoci i
+            dalším lidem. Zrodila se tedy myšlenka
+            <strong>vydat blog knižně</strong>.
+          </p>
+          <p>
+            Od myšlenky k činům to trvalo pár let. Blog byl bezpečně zaparkován
+            v počítači a čekal, než najdu odvahu vyjít s kůží na trh. A to se
+            stalo
+            <strong>na podzim v roce 2021</strong>, kdy jsme se s manželem
+            potulovali po Jizerských horách a já se definitivně rozhodla, že o
+            vydání blogu přestanu už jen mlít, ale začnu konat. Oslovila jsem
+            svoji kamarádku Péťu Hanušovou, zda by knížku ilustrovala a už se
+            vše začalo hezky kutálet.
+          </p>
+          <p>
+            Kniha Drátem do oka byla napsána pro ty, kteří chtějí
+            <strong>nahlédnout do nemocné duše</strong>. Najdou tam možná
+            vysvětlení, proč se jejich blízký tolik změnil a co se mu odehrává v
+            hlavě.
+          </p>
+          <p>
+            Knížka taky <strong>dokáže dodat odvahu a sílu</strong> těm, které
+            deprese potkala. Zjistí, že v tom nejsou sami a že existují cesty,
+            jak z těch nejhorších stavů ven.
+          </p>
+          <p>
+            A nakonec je tu knížka i pro ty, kterých se
+            <strong>deprese vůbec netýká</strong>. Po přečtení možná zjistí, jak
+            skvělý mají život a přinese jim velkou dávku vděčnosti (na chvíli
+            rozhodně).
+          </p>
+        </div>
+
+        <h3 class="bigger-text">
+          Knížka je nyní dokončená. Provází ji přes 70 jedinečných ilustrací a
+          já ji s vděčností, že to všechno klaplo, pouštím do světa. Přeju jí,
+          aby otevřela nejen jedno oko, ale i srdce.
+        </h3>
+
+        <a class="book-btn btn-center" href="../pages/form.html"
+          >Koupit knížku</a
+        >
       </div>
     </section>
 
@@ -117,107 +156,6 @@
           alt="ilustrace"
         />
       </div>
-    </section>
-
-    <section class="form">
-      <form>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationServer01">First name</label>
-            <input
-              type="text"
-              class="form-control is-valid"
-              id="validationServer01"
-              placeholder="First name"
-              value="Mark"
-              required
-            />
-            <div class="valid-feedback">Looks good!</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationServer02">Last name</label>
-            <input
-              type="text"
-              class="form-control is-valid"
-              id="validationServer02"
-              placeholder="Last name"
-              value="Otto"
-              required
-            />
-            <div class="valid-feedback">Looks good!</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationServerUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend3">@</span>
-              </div>
-              <input
-                type="text"
-                class="form-control is-invalid"
-                id="validationServerUsername"
-                placeholder="Username"
-                aria-describedby="inputGroupPrepend3"
-                required
-              />
-              <div class="invalid-feedback">Please choose a username.</div>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationServer03">City</label>
-            <input
-              type="text"
-              class="form-control is-invalid"
-              id="validationServer03"
-              placeholder="City"
-              required
-            />
-            <div class="invalid-feedback">Please provide a valid city.</div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationServer04">State</label>
-            <input
-              type="text"
-              class="form-control is-invalid"
-              id="validationServer04"
-              placeholder="State"
-              required
-            />
-            <div class="invalid-feedback">Please provide a valid state.</div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationServer05">Zip</label>
-            <input
-              type="text"
-              class="form-control is-invalid"
-              id="validationServer05"
-              placeholder="Zip"
-              required
-            />
-            <div class="invalid-feedback">Please provide a valid zip.</div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input
-              class="form-check-input is-invalid"
-              type="checkbox"
-              value=""
-              id="invalidCheck3"
-              required
-            />
-            <label class="form-check-label" for="invalidCheck3">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
     </section>
 
     <footer class="footer">
@@ -250,12 +188,13 @@
               <div class="social-media__row">
                 <span
                   ><a
+                    class="icon"
                     href="https://www.facebook.com/profile.php?id=100086792183174"
                     ><img
                       class="icon"
                       src="../icons/facebook.svg"
                       alt="facebook logo"
-                      width="30"
+                      width="40"
                     /> </a
                 ></span>
               </div>
@@ -266,7 +205,7 @@
                       class="icon"
                       src="../icons/instagram.svg"
                       alt="instagram logo"
-                      width="30"
+                      width="40"
                     /> </a
                 ></span>
               </div>
@@ -311,21 +250,5 @@
         </p>
       </div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Štěpánka Živčáková</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../form.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="top-nav">
+        <div class="logo-container">
+          <a href="#">
+            <img
+              class=""
+              src="../images/sz_logo_wht.png"
+              alt="logo Štěpánka Živčáková"
+              height="30px"
+              width="30px"
+            /> </a
+          >Štěpánka Živčáková
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <div class="menu">
+          <a href="../index.html">Úvod</a>
+          <a href="#">O mně</a>
+          <a href="../pages/book.html">Kniha</a>
+          <a href="#">Besedy</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Objednávkový formulář</h1>
+    <div class="form-content content">
+      <p>
+        Objednávkový formulář je právě ve výstavbě a měl by byt brzo hotový.
+      </p>
+      <p>
+        Pokud máte tedy zájem knížku napište mi prosím email a já se s Vámi
+        obratem spojim.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="title">
+        <h2>Objednávkový formulář</h2>
+      </div>
+      <div class="d-flex">
+        <form
+          action="https://formsubmit.co/nikola.kabatova@gmail.com"
+          method="POST"
+        >
+          <label>
+            <span>Počet kusů <span class="required">*</span></span>
+            <select name="selection">
+              <option value="select">Vyberte počet kusů..</option>
+
+              <option value="1">1 ks</option>
+              <option value="2">2 ks</option>
+              <option value="3">3 ks</option>
+              <option value="4">4 ks</option>
+              <option value="5">5 ks</option>
+            </select>
+          </label>
+          <label>
+            <span class="fname">Jméno <span class="required">*</span></span>
+            <input type="text" name="fname" />
+          </label>
+          <label>
+            <span class="lname">Příjmení <span class="required">*</span></span>
+            <input type="text" name="lname" />
+          </label>
+          <!-- <label>
+            <span>Název firmy (Optional)</span>
+            <input type="text" name="cn" />
+          </label> -->
+          <label>
+            <span>Stát <span class="required">*</span></span>
+            <select name="selection">
+              <option value="select">Vyberte stát..</option>
+
+              <option value="CZE">Česká Republika</option>
+              <option value="SVK">Slovakia</option>
+            </select>
+          </label>
+          <label>
+            <span>Ulice <span class="required">*</span></span>
+            <input
+              type="text"
+              name="houseadd"
+              placeholder="Název ulice a číslo domu"
+              required
+            />
+          </label>
+          <label> </label>
+          <label>
+            <span>Město<span class="required">*</span></span>
+            <input type="text" name="city" />
+          </label>
+
+          <label>
+            <span>PSČ <span class="required">*</span></span>
+            <input type="text" name="city" />
+          </label>
+          <label>
+            <span>Telefon<span class="required">*</span></span>
+            <input type="tel" name="city" />
+          </label>
+          <label>
+            <span>Email <span class="required">*</span></span>
+            <input type="email" name="city" />
+          </label>
+        </form>
+
+        <div class="Yorder">
+          <table>
+            <tr>
+              <th colspan="2">Vaše objednávka</th>
+            </tr>
+          </table>
+          <br />
+          <tr>
+            <th colspan="2">
+              <strong>Doprava</strong>
+            </th>
+          </tr>
+          <div>
+            <input type="radio" name="dbt" value="dbt" checked /> Zásilkovna (79
+            Kč)
+          </div>
+
+          <div>
+            <input type="radio" name="dbt" value="cd" /> Česká poška (72 Kč)
+          </div>
+
+          <button type="submit">Place Order</button>
+          <a
+            href="https://formsubmit.co/el/{https://formsubmit.co/el/yaziro}"
+            target="_blank"
+            >Email us</a
+          >
+        </div>
+        <!-- Yorder -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="wrapper-social">
+          <div class="wrapper-test">
+            <img
+              class="footer__logo"
+              src="../images/sz_logo_wht.png"
+              alt="logo Štěpánka Živčáková"
+            />
+            <section class="contact" id="contact">
+              <div class="contact__row">
+                <span class="contact__label">E-mail:</span
+                ><span class="contact__detail"
+                  ><a href="mailto:stepanka.zivcakova@gmail.com"
+                    >stepankazivcakova@gmail.com</a
+                  ></span
+                >
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">Telefon:</span
+                ><span class="contact__detail">+420 604 715 160</span>
+              </div>
+            </section>
+          </div>
+          <section class="social-media-container">
+            <h3>Sledujte mě</h3>
+            <div class="social-media">
+              <div class="social-media__row">
+                <span
+                  ><a
+                    class="icon"
+                    href="https://www.facebook.com/profile.php?id=100086792183174"
+                    ><img
+                      class="icon"
+                      src="../icons/facebook.svg"
+                      alt="facebook logo"
+                      width="40"
+                    /> </a
+                ></span>
+              </div>
+              <div class="social-media__row">
+                <span>
+                  <a href="https://www.instagram.com/vezmi_depresi_na_kafe/"
+                    ><img
+                      class="icon"
+                      src="../icons/instagram.svg"
+                      alt="instagram logo"
+                      width="40"
+                    /> </a
+                ></span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="partners-container">
+          <h3>Spolupracuji s:</h3>
+          <div class="partners-media">
+            <div class="partners-media__row">
+              <img
+                class="partners"
+                src="../images-partners/nojvis.png"
+                alt="partners"
+              />
+              <span><a href=""></a></span>
+            </div>
+            <div class="partners-media__row">
+              <img
+                class="partners"
+                src="../images-partners/kn.png"
+                alt="partners"
+              />
+              <span> <a href=""></a></span>
+            </div>
+
+            <div class="partners-media__row">
+              <img
+                class="partners partners-zeme"
+                src="../images-partners/zms.png"
+                alt="partners"
+              />
+              <span> <a href=""></a></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer-copyright">
+        <p>
+          © 2023 Webové stránky vytvořila
+          <a href="https://www.instagram.com/niki_kabatova/">Niki Kabátová</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,43 +1,101 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand mb-0" href="#">
-    <img
-      class="d-inline-block align-top"
-      src="images/sz_logo_wht.png"
-      alt="logo Štěpánka Živčáková"
-      height="40px"
-      width="40px"
-    />
-    Štěpánka Živčáková
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Úvod</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">O mně</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Besedy</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Kniha</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Kontakt</a>
-      </li>
-    </ul>
+<div class="container">
+  <div class="title">
+    <h2>Objednávkový formulář</h2>
   </div>
-</nav>
+  <div class="d-flex">
+    <form
+      action="https://formsubmit.co/https://formsubmit.co/el/yaziro"
+      method="POST"
+    >
+      <label>
+        <span>Počet kusů <span class="required">*</span></span>
+        <select name="selection">
+          <option value="select">Vyberte počet kusů..</option>
+
+          <option value="1">1 ks</option>
+          <option value="2">2 ks</option>
+          <option value="3">3 ks</option>
+          <option value="4">4 ks</option>
+          <option value="5">5 ks</option>
+        </select>
+      </label>
+      <label>
+        <span class="fname">Jméno <span class="required">*</span></span>
+        <input type="text" name="fname" />
+      </label>
+      <label>
+        <span class="lname">Příjmení <span class="required">*</span></span>
+        <input type="text" name="lname" />
+      </label>
+      <!-- <label>
+        <span>Název firmy (Optional)</span>
+        <input type="text" name="cn" />
+      </label> -->
+      <label>
+        <span>Stát <span class="required">*</span></span>
+        <select name="selection">
+          <option value="select">Vyberte stát..</option>
+
+          <option value="CZE">Česká Republika</option>
+          <option value="SVK">Slovakia</option>
+        </select>
+      </label>
+      <label>
+        <span>Ulice <span class="required">*</span></span>
+        <input
+          type="text"
+          name="houseadd"
+          placeholder="Název ulice a číslo domu"
+          required
+        />
+      </label>
+      <label> </label>
+      <label>
+        <span>Město<span class="required">*</span></span>
+        <input type="text" name="city" />
+      </label>
+
+      <label>
+        <span>PSČ <span class="required">*</span></span>
+        <input type="text" name="city" />
+      </label>
+      <label>
+        <span>Telefon<span class="required">*</span></span>
+        <input type="tel" name="city" />
+      </label>
+      <label>
+        <span>Email <span class="required">*</span></span>
+        <input type="email" name="city" />
+      </label>
+    </form>
+
+    <div class="Yorder">
+      <table>
+        <tr>
+          <th colspan="2">Vaše objednávka</th>
+        </tr>
+      </table>
+      <br />
+      <tr>
+        <th colspan="2">
+          <strong>Doprava</strong>
+        </th>
+      </tr>
+      <div>
+        <input type="radio" name="dbt" value="dbt" checked /> Zásilkovna (79 Kč)
+      </div>
+
+      <div>
+        <input type="radio" name="dbt" value="cd" /> Česká poška (72 Kč)
+      </div>
+
+      <button type="submit">Place Order</button>
+      <a
+        href="https://formsubmit.co/el/{https://formsubmit.co/el/yaziro}"
+        target="_blank"
+        >Email us</a
+      >
+    </div>
+    <!-- Yorder -->
+  </div>
+</div>
