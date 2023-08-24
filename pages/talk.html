@@ -6,213 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Štěpánka Živčáková</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Domine&family=Noto+Serif+Display:wght@500&family=Nunito+Sans:wght@400;600&family=Roboto:wght@400;500&family=Anton&family=Barlow:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand mb-0" href="#">
+    <nav>
+      <div class="top-nav">
+        <div class="logo-container">
+          <a href="#">
             <img
-              class="d-inline-block align-top"
-              src="images/sz_logo_wht.png"
+              class=""
+              src="../images/sz_logo_wht.png"
               alt="logo Štěpánka Živčáková"
-              height="40px"
-              width="40px"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-    <!-- <span class="toggler-icon toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span> -->
-
-    <!--           
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Úvod</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">O mně</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#besedy">Besedy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#book">Kniha</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Kontakt</a>
-              </li>
-            </ul>
-          
-    </header> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand mb-0" href="#">
-        <img
-          class="d-inline-block align-top"
-          src="../images/sz_logo_wht.png"
-          alt="logo Štěpánka Živčáková"
-          height="40px"
-          width="40px"
-        />
-        Štěpánka Živčáková
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html"
-              >Úvod</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/about.html">O mně</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Besedy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/book.html">Kniha</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/contact.html">Kontakt</a>
-          </li>
-        </ul>
+              height="30px"
+              width="30px"
+            /> </a
+          >Štěpánka Živčáková
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <div class="menu">
+          <a href="../index.html">Úvod</a>
+          <a href="#">O mně</a>
+          <a href="../pages/book.html">Kniha</a>
+          <a href="#">Besedy</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Kontakt</a>
+        </div>
       </div>
     </nav>
-    <section class="bg-image"></section>
-    <section class="about" id="about">
-      <h1 class="about__title">O mně</h1>
-      <div class="about-content">
-        <p>
-          Ke komu Tě to vítr zavál? Jsem spokojená <strong>manželka</strong>,
-          <strong>maminka</strong> dvou malých dětí a
-          <strong>majitelka</strong> bláznivého teriéra.
-        </p>
-        <p>
-          Jsem duše, co má ráda výzvy. Tou aktuální je pořádání besed na téma
-          <strong>deprese</strong>. Mám to štěstí, že mě deprese před deseti
-          lety navštívila. Vlétla do mého života nečekaně - jako hurikán, který
-          vše zničil, aby mohlo vyrůst něco nového. Svůj příběh po boku deprese
-          jsem sepsala do <strong>knížky Drátem do oka.</strong>
-        </p>
-        <p>
-          Umím si udělat <strong>čas jen sama pro sebe.</strong> Mám zavedený
-          deník radosti a vděčnosti, do kterého každý den poctivě píšu. Zkouším
-          různé cesty, jak se spojit sama se sebou (jóga, otužování,
-          mindfulness, pravidelné meditace).
-        </p>
-        <p>
-          Jsem <strong>trenérka psů</strong>, teda jejich páníčků. Učím je, co
-          dělat, aby byly obě strany vodítka spoko. Pomáhám jim, aby mohli svého
-          <strong>psa vzít kamkoliv sebou</strong>, aniž by se strachovali, co
-          zas bude vyvádět.
-        </p>
-        <p>
-          <strong
-            >Věřím, že většinu věcí ve svém životě můžeme změnit, jen musíme
-            vědět jak.</strong
-          >
-        </p>
-      </div>
+
+    <section class="book" id="book">
+      <h1 class="book__title">Beseda Vezmi depresi na kafe</h1>
+      <div class="book-content talk-content content">
+
+        <div class="copy-container">
+          
+          <p>
+            Abych otevřela téma deprese, rozhodla jsem se v rámci své práce pořádat besedy s názvem Vezmi depresi na kafe na nejrůznějších místech. Ptáte se proč? Protože každému je příjemně někde jinde. Mé besedy jsou vedeny v přátelském duchu a z pohledu člověka, který si depresí prošel. Vyprávím svůj příběh a přeji si, aby v něm ostatní našli to, co hledají. 
+          </p>
+
+          <h2>Pro koho jsou besedy určeny? </h2>
+          <p>
+            
+Pro všechny – lze je pořádat ve školách základních, středních, vysokých, v rámci zájmových kroužků, v kavárnách, lázních, kinech… Prostě všude, kde si toto téma najde své posluchače.
+
+          </p>
+          <h2>Jak je beseda koncipována?</h2>
+          <p>
+            
+Seznámení se s tím, kdo jsem já a proč besedy dělám.
+Rozdíly mezi depresí a depkou. 
+Sdílení mého vlastního příběhu po boku deprese. 
+Tipy, jak reagovat, když v okolí někdo depresi má a co pro něj můžu udělat. 
+
+
+
+
+
+
+          </p>
+
+          <h2>Jak dlouho beseda trvá?</h2>
+
+          <p>
+            cca 2 hodiny  (odvíjí se i od dané skupiny posluchačů, počtu dotazů atd.) Lze přizpůsobit.
+          </p>
+
+          <h2>Cena? </h2>
+          <p>
+            Cena na základě osobní konzultace. Dokážu se přizpůsobit vašim podmínkám a jsem otevřená hledání možností pro oboustrannou spokojenost. www.gw-int.net
+          </p>
+          <p>Chtěli byste besedu i ve Vašem městě? Stačí napsat na <a href="mailto:stepankazivcakova@gmail.com"
+            >stepankazivcakova@gmail.com</a
+          ></p>
+        </div>
+
     </section>
 
+    
+
     <footer class="footer">
-      <img
-        class="footer__logo"
-        src="../images/sz_logo_wht.png"
-        alt="logo Štěpánka Živčáková"
-      />
-      <section class="contact" id="contact">
-        <div class="contact__row">
-          <span class="contact__label">E-mail:</span
-          ><span class="contact__detail"
-            ><a href="mailto:stepanka.zivcakova@gmail.com"
-              >stepanka.zivcakova@gmail.com</a
-            ></span
-          >
+      <div class="footer-container">
+        <div class="wrapper-social">
+          <div class="wrapper-test">
+            <img
+              class="footer__logo"
+              src="../images/sz_logo_wht.png"
+              alt="logo Štěpánka Živčáková"
+            />
+            <section class="contact" id="contact">
+              <div class="contact__row">
+                <span class="contact__label">E-mail:</span
+                ><span class="contact__detail"
+                  ><a href="mailto:stepankazivcakova@gmail.com"
+                    >stepankazivcakova@gmail.com</a
+                  ></span
+                >
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">Telefon:</span
+                ><span class="contact__detail">+420 604 715 160</span>
+              </div>
+            </section>
+          </div>
+          <section class="social-media-container">
+            <h3>Sledujte mě</h3>
+            <div class="social-media">
+              <div class="social-media__row">
+                <span
+                  ><a
+                    class="icon"
+                    href="https://www.facebook.com/profile.php?id=100086792183174"
+                    ><img
+                      class="icon"
+                      src="../icons/facebook.svg"
+                      alt="facebook logo"
+                      width="40"
+                    /> </a
+                ></span>
+              </div>
+              <div class="social-media__row">
+                <span>
+                  <a href="https://www.instagram.com/vezmi_depresi_na_kafe/"
+                    ><img
+                      class="icon"
+                      src="../icons/instagram.svg"
+                      alt="instagram logo"
+                      width="40"
+                    /> </a
+                ></span>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="contact__row">
-          <span class="contact__label">Telefon:</span
-          ><span class="contact__detail">+420 604 715 160</span>
-        </div>
-      </section>
-      <section class="social-media">
-        <div class="social-media__row">
-          <img
-            class="icon"
-            src="../icons/facebook.svg"
-            alt="facebook logo"
-            width="20"
-          />
-          <span
-            ><a href="https://www.facebook.com/stepanka.brezinova"
-              >facebook.com/stepanka.brezinova</a
-            ></span
-          >
-        </div>
-        <div class="social-media__row">
-          <img
-            class="icon"
-            src="../icons/instagram.svg"
-            alt="instagram logo"
-            width="20"
-          />
-          <span>
-            <a href="https://www.instagram.com/dratem.do.oka/"
-              >@dratemdooka</a
-            ></span
-          >
-        </div>
-      </section>
+        <section class="partners-container">
+          <h3>Spolupracuji s:</h3>
+          <div class="partners-media">
+            <div class="partners-media__row">
+              <img
+                class="partners"
+                src="../images-partners/nojvis.png"
+                alt="partners"
+              />
+              <span><a href=""></a></span>
+            </div>
+            <div class="partners-media__row">
+              <img
+                class="partners"
+                src="../images-partners/kn.png"
+                alt="partners"
+              />
+              <span> <a href=""></a></span>
+            </div>
+
+            <div class="partners-media__row">
+              <img
+                class="partners-zeme"
+                src="../images-partners/zms.png"
+                alt="partners"
+              />
+              <span> <a href=""></a></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer-copyright">
+        <p>
+          © 2023 Webové stránky vytvořila
+          <a href="https://www.instagram.com/niki_kabatova/">Niki Kabátová</a>
+        </p>
+      </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
