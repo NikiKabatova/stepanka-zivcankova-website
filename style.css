@@ -792,3 +792,29 @@ body {
 .price {
   font-size: 3rem;
 }
+
+/* BLOG */
+
+.blog-img {
+  background-size: cover;
+  background-position: center;
+  width: 20%;
+  height: 100%;
+}
+
+.blog-copy {
+  padding: 0 2rem;
+  font-size: 20px;
+}
+
+.blog-copy-container {
+  text-align: left;
+}
+
+.copy-container p {
+  font-size: 20px;
+}
+
+.blog-content-info {
+  margin-bottom: 0;
+}
